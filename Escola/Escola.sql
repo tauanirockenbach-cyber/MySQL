@@ -286,7 +286,8 @@ ORDER BY media desc;
 # 9. Mostre as cidades ordenadas pela quantidade de alunos.
 SELECT cidade_aluno, COUNT(nome_aluno) as quant
 FROM Alunos
-GROUP BY cidade_aluno;
+GROUP BY cidade_aluno
+ORDER BY quant;
 
 # 10. Liste os alunos com média de notas maior que 7 ordenados pela média decrescente.
 SELECT nome_aluno, avg (nota_aluno) as nota
